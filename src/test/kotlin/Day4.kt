@@ -58,6 +58,13 @@ class Day4 {
     internal fun part1() {
         val lines = readLinesOf("day4_example.txt")
 
-        Day4Part1.calculate(lines)
+        Day4Part1.calculate(lines) shouldBe 4512
+    }
+
+    @Test
+    internal fun part2() {
+        val lines = readLinesOf("day4_example.txt")
+
+        Day4Part2.calculate(lines) shouldBe 1924
     }
 }
